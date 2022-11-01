@@ -1,5 +1,5 @@
 import { Home } from "./pages/Home"
-import './assets/hamburgers.css'
+import './css/hamburgers.css'
 import 'animate.css';
 
 function App() {

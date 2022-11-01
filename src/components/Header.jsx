@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../assets/logo_white.png'
+import logo from '/assets/logo_white.png'
 
 const Header = () => {
   const [display, setDisplay] = useState(true);
@@ -13,7 +13,7 @@ const Header = () => {
   }
 
   const downloadPdf = () => {
-    const url = '/src/assets/KWASI_ANTWI_BAAYEH.pdf';
+    const url = '/assets/KWASI_ANTWI_BAAYEH.pdf';
     window.open(url, '_blank')
   }
 

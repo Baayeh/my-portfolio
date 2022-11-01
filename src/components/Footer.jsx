@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   const downloadPdf = () => {
-    const url = '/src/assets/KWASI_ANTWI_BAAYEH.pdf';
+    const url = '/assets/KWASI_ANTWI_BAAYEH.pdf';
     window.open(url, '_blank')
   }
   

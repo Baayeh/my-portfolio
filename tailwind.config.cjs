@@ -7,8 +7,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'header-bg-sm': "url('/src/assets/header-bg-sm.jpg')",
-        'header-bg': "url('/src/assets/header-bg.jpg')",
-        'footer-bg': "url('/src/assets/profile_pic1.png')"
+        'header-bg': "url('/assets/header-bg.jpg')",
+        'footer-bg': "url('/assets/profile_pic1.png')"
       },
       spacing: {
         82: '23rem',

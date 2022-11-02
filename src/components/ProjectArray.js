@@ -10,6 +10,15 @@ const projectsArr = [
   },
   {
     id: 2,
+    title: 'Math Magician',
+    image: '/assets/math-magician.png',
+    description: '"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote.',
+    languages: ['React', 'Tailwindcss'],
+    demo: 'https://maths-magicians.vercel.app/',
+    source: 'https://github.com/Baayeh/maths-magicians'
+  },
+  {
+    id: 3,
     title: 'Leaderboard',
     image: '/assets/leaderboard.PNG',
     description: 'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. I created this project using ES6 concepts. I connected to the Leadboard API service',
@@ -18,7 +27,7 @@ const projectsArr = [
     source: 'https://github.com/Baayeh/leaderboard'
   },
   {
-    id: 3,
+    id: 4,
     title: 'Todo List',
     image: '/assets/todos.PNG',
     description: 'A Todo App with basic CRUD functionalities using ES6 concepts and webpack. It uses the localStorage to store the data.',

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const About = () => {
   return (
@@ -20,8 +20,7 @@ const About = () => {
             </p>
             <p className="stack text-green-500 my-1 lg:text-xl">
               <span>Javascript </span>|<span> React & Redux </span>|
-              <span> Ruby </span>|<span> Ruby on Rails </span>|
-              <span> HTML/CSS </span>
+              <span> Ruby </span>|<span> HTML/CSS </span>
             </p>
             <p className="lg:text-lg">
               I'm a software developer! I can help you build a product , feature

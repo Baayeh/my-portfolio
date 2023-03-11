@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from '/assets/logo_white.png';
 
 const Header = () => {
   const [display, setDisplay] = useState(true);
@@ -25,7 +24,7 @@ const Header = () => {
             <nav className="p-4 md:px-14 lg:px-36 text-white flex justify-between items-center">
               <a href="/">
                 <img
-                  src={logo}
+                  src="https://res.cloudinary.com/dskl0qde4/image/upload/v1678548915/logo_white_mazr9o.png"
                   loading="lazy"
                   alt="Portfolio Image"
                   className="w-32"

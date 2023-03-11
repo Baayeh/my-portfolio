@@ -12,7 +12,7 @@ const About = () => {
         </h3>
         <div className="md:flex gap-8 items-center">
           <div className="profile-img hidden md:block rounded-full overflow-hidden">
-            <img src="/assets/profile_pic.jpg" alt="Profile Image" />
+            <img src="https://res.cloudinary.com/dskl0qde4/image/upload/v1678549033/profile_pic_e8y5rh.jpg" alt="Profile Image" />
           </div>
           <div className="about-content">
             <p className="mt-10 md:mt-8 text-lg lg:text-3xl text-slate-400">

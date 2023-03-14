@@ -2,14 +2,22 @@ import React from 'react';
 
 const Footer = () => {
   const downloadPdf = () => {
-    const url = '/assets/Resume.pdf';
-    window.open(url, '_blank');
+    const url = '/Resume.pdf';
+    fetch(url).then((res) => {
+      res.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement('a');
+        alink.href = fileURL;
+        alink.href = fileURL;
+        alink.download = 'Resume.pdf';
+        alink.click();
+      });
+    });
   };
 
   return (
     <footer className="relative">
-      <div className="bg-footer-bg bg-cover bg-no-repeat bg-center bg-fixed h-98 opacity-20"></div>
-      <div className="footer content absolute w-full top-0 p-4 md:px-14">
+      <div className="footer bg-[#11001d] content absolute w-full top-0 p-4 md:px-14">
         <h3 className="text-2xl border-b border-gray-500">
           Stacks under my belt
         </h3>
@@ -32,7 +40,6 @@ const Footer = () => {
         <div className="footer-actions mt-14 flex flex-col items-center gap-2">
           <button
             type="button"
-            href="#"
             className="bg-green-600 px-2 py-3 rounded animate__animated animate__pulse animate__infinite animate__fast"
             onClick={downloadPdf}
           >

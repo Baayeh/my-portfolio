@@ -41,14 +41,14 @@ const Header = () => {
   };
 
   return (
-    <header className="h-screen">
+    <header id="header" className="h-screen">
       <div className="w-full h-full relative">
         <div
           ref={navRef}
-          className="md:p-5 nav-content md:flex justify-between items-start fixed z-10 top-0 w-full"
+          className="md:pb-[1rem] nav-content md:flex justify-between items-center fixed z-10 top-0 w-full"
         >
-          <nav className="p-3 md:px-14 lg:px-36 text-white flex justify-between items-center transition-all duration-300 ease-in-out">
-            <a className={`${textColor} ${styles.logo}`} href="/">
+          <nav className="px-3 md:px-14 lg:px-36 text-white flex justify-between items-center transition-all duration-300 ease-in-out">
+            <a className={`${textColor} ${styles.logo}`} href="#header">
               steps
             </a>
             <button
@@ -96,15 +96,15 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item uppercase">
-              <button
+              <a
+                href="https://drive.google.com/file/d/15IQ0ZEsEiCephWHtKUT-M9mno5N6PGNm/view?usp=sharing"
                 type="button"
-                className="bg-green-600 text-white p-3 rounded animate__animated animate__pulse animate__infinite animate__fast xl:w-[10rem]"
+                target="_blank"
+                className="inline-block bg-green-600 text-white p-3 rounded animate__animated animate__pulse animate__infinite animate__fast md:w-[10rem] text-center"
                 id="downloadBtn"
-                value="download"
-                onClick={downloadPdf}
               >
                 Get My Resume
-              </button>
+              </a>
             </li>
           </ul>
         </div>
@@ -149,7 +149,7 @@ const Header = () => {
                 user-friendly solution.
               </p>
               <div className={` ${styles.get_in_touch}`}>
-                <a href="#">Get in touch</a>
+                <a href="#contact">Get in touch</a>
                 <span>
                   <FaLongArrowAltRight />
                 </span>

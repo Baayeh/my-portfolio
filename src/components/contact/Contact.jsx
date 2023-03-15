@@ -1,60 +1,133 @@
+import TextField from '@mui/material/TextField';
 import React from 'react';
+import { BsFacebook, BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
+import { FiPhoneCall } from 'react-icons/fi';
 import { IoLogoWhatsapp } from 'react-icons/io';
+import { TfiEmail } from 'react-icons/tfi';
 
 const Contact = () => {
   return (
     <section
       id="contact"
-      className="bg-[#11001d] p-4 md:py-12 md:px-14 lg:py-36 mt-8"
+      className="bg-[#11001d] p-4 mt-8 lg:flex justify-center items-center lg:p-14 lg:gap-16"
     >
-      <h3 className="text-center p-4 text-3xl lg:text-6xl lg:w-[75%] lg:mx-auto md:text-center font-bold leading-normal">
-        I'm always interested in hearing about{' '}
-        <span className="text-orange-500">new projects</span>, so if you'd like
-        to chat please get in touch.
-      </h3>
-
-      <div className="bg-slate-900 p-5 rounded contact-info mt-5 flex flex-col gap-6 md:flex-row md:flex-wrap md:items-center md:justify-center lg:justify-around lg:gap-14">
-        <p className="text-xl font-semibold flex items-center gap-5 text-slate-400">
-          <span className="text-green-500">
-            <svg
-              className="w-7 h-7"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-            </svg>
-          </span>
-          <span>(+233) 54 809 1237</span>
+      <section className="text-center my-4 lg:text-start">
+        <h3 className="font-bold text-2xl">Get In Touch With Me</h3>
+        <p className="my-2">
+          I'm always interested in hearing about{' '}
+          <span className="text-orange-500">new projects</span>, so if you'd
+          like to chat please get in touch.
         </p>
-        <a
-          href="https://wa.me/233548091237"
-          target="_blank"
-          className="text-xl flex items-center gap-5 font-semibold text-slate-400"
-        >
-          <span>
-            <IoLogoWhatsapp className="fill-green-500 w-7 h-7" />
-          </span>
-          <span>Whatsapp</span>
-        </a>
-        <a
-          href="mailto:kabaayeh@gmail.com?subject=New Project Available"
-          className="text-xl flex items-center gap-5 text-slate-400 font-semibold"
-        >
-          <span className="text-green-500">
-            <svg
-              className="w-7 h-7"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+        <div className="contact-info lg:mt-7">
+          <div className="mb-6 lg:flex hidden items-center gap-5">
+            <div className="bg-green-600 p-4 rounded">
+              <FiPhoneCall className="text-2xl" />
+            </div>
+            <div>
+              <h4 className="font-bold">Phone Number</h4>
+              <p className="text-slate-300">(+233)54 809 1237</p>
+            </div>
+          </div>
+          <div className="mb-6 lg:flex hidden items-center gap-5">
+            <div className="bg-green-600 p-4 rounded">
+              <TfiEmail className="text-2xl" />
+            </div>
+            <div>
+              <h4 className="font-bold">Email Address</h4>
+              <p className="text-slate-300">kabaayeh@gmail.com</p>
+            </div>
+          </div>
+
+          <div className="connect">
+            <p className="text-xl md:text-lg uppercase mt-2 text-orange-500 tracking-widest font-light">
+              Online Profiles
+            </p>
+            <div className="socials flex justify-center lg:justify-start gap-6 mt-2">
+              <a
+                href="https://github.com/Baayeh"
+                target="_blank"
+                className="text-2xl"
+              >
+                <BsGithub />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/kabaayeh"
+                className="text-2xl"
+                target="_blank"
+              >
+                <BsLinkedin />
+              </a>
+              <a
+                href="https://twitter.com/Cest_Baayeh"
+                className="text-2xl"
+                target="_blank"
+              >
+                <BsTwitter />
+              </a>
+              <a
+                href="https://web.facebook.com/kwasiantwi.baayeh"
+                className="text-2xl"
+                target="_blank"
+              >
+                <BsFacebook />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mt-10">
+        <form action="https://formsubmit.co/kabaayeh@gmail.com" method="POST">
+          <div className="form-control mb-6 sm:w-[30rem] mx-auto">
+            <label htmlFor="name">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                className="p-3 text-slate-900 rounded w-full text-lg focus:outline-none"
+                placeholder="Full Name"
+                required
+              />
+            </label>
+          </div>
+          <div className="form-control mb-6 sm:w-[30rem] mx-auto">
+            <label htmlFor="email">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                className="p-3 text-slate-900 rounded w-full text-lg focus:outline-none"
+                placeholder="Your email"
+                required
+              />
+            </label>
+          </div>
+          <div className="form-control mb-6 sm:w-[30rem] mx-auto">
+            <label htmlFor="message">
+              <textarea
+                id="message"
+                name="message"
+                className="p-3 text-slate-900 rounded w-full text-lg focus:outline-none"
+                placeholder="Write your message..."
+                required
+                rows="6"
+              />
+            </label>
+          </div>
+          <input type="hidden" name="_captcha" value="false"></input>
+          <input type="hidden" name="_subject" value="New Client"></input>
+          <input type="hidden" name="_template" value="table"></input>
+          <input type="hidden" name="_next" value="https://my-portfolio-xi-swart.vercel.app/thanks"></input>
+          <div className="form-action mb-6 sm:w-[30rem] mx-auto">
+            <button
+              type="submit"
+              className="block bg-green-500 w-full p-3 rounded"
             >
-              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-            </svg>
-          </span>
-          <span>kabaayeh@gmail.com</span>
-        </a>
-      </div>
+              Send Message
+            </button>
+          </div>
+        </form>
+      </section>
     </section>
   );
 };

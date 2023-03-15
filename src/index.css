@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;600;700;900&family=Rampart+One&family=WindSong:wght@500&display=swap');
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,7 +16,9 @@ body {
   font-family: 'Rampart One', cursive;
 }
 
-.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
   background-color: #f73a3a;
 }
 

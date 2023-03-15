@@ -38,13 +38,14 @@ const Footer = () => {
           <li>Adobe Photoshop</li>
         </ul>
         <div className="footer-actions mt-14 flex flex-col items-center gap-2">
-          <button
+          <a
             type="button"
+            href="https://drive.google.com/file/d/15IQ0ZEsEiCephWHtKUT-M9mno5N6PGNm/view?usp=sharing"
+            target="_blank"
             className="bg-green-600 px-2 py-3 rounded animate__animated animate__pulse animate__infinite animate__fast"
-            onClick={downloadPdf}
           >
             Get My Resume
-          </button>
+          </a>
           <div className="flex flex-col items-center mt-4">
             <p>
               Kwasi Baayeh ({' '}

@@ -5,7 +5,7 @@ const projectsArr = [
     image:
       'https://res.cloudinary.com/dskl0qde4/image/upload/v1678818346/Screenshot_2023-03-14_at_18-19-48_FrugalizeApp_fyowul.png',
     description:
-      'The Frugalize app helps you to manage your budget. The app allows users to create categories and add transactions to the categories ',
+      'The Frugalize app helps you to manage your budget. The app allows users to create categories and add transactions to the categories.',
     languages: ['ruby', 'ruby-on-rails', 'postgresql', 'devise', 'bootstrap5'],
     demo: 'https://frugalize.onrender.com/',
     source: 'https://github.com/Baayeh/frugalize_app',
@@ -16,7 +16,7 @@ const projectsArr = [
     image:
       'https://res.cloudinary.com/dskl0qde4/image/upload/v1678548278/covid-tracker_pcbiye.png',
     description:
-      'COVID-19 Tracker is a web app that tracks COVID-19 cases worldwide. It uses the VACCOVID API from RapidAPI',
+      'COVID-19 Tracker is a web app that tracks COVID-19 cases worldwide. It uses the VACCOVID API from RapidAPI.',
     languages: ['react', 'redux', 'rest-api', 'tailwindcss'],
     demo: 'https://covid-metrics.vercel.app/',
     source: 'https://github.com/Baayeh/covid-metrics',
@@ -27,7 +27,7 @@ const projectsArr = [
     image:
       'https://res.cloudinary.com/dskl0qde4/image/upload/v1678548304/rest-img_bhskvp.jpg',
     description:
-      'The Rest-Countries App is a website that displays a list of countries from an API. On the site, you are able to see more details about the country, search for a country and also filter by region. Built with ❤',
+      'The Rest-Countries App is a website that displays a list of countries from an API. On the site, you are able to see more details about the country, search for a country and also filter by region.',
     languages: [
       'javascript',
       'es6 concept',
@@ -55,7 +55,7 @@ const projectsArr = [
     image:
       'https://res.cloudinary.com/dskl0qde4/image/upload/v1678548471/Screenshot_2023-03-11_at_15-27-14_Leaderboard_rkwqau.png',
     description:
-      'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. I created this project using ES6 concepts. I connected to the Leadboard API service',
+      'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. I created this project using ES6 concepts. I connected to the Leadboard API service.',
     languages: [
       'javascript',
       'es6 concept',

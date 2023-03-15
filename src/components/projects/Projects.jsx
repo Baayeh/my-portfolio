@@ -10,7 +10,7 @@ const Projects = () => {
       <h3 className="text-5xl lg:text-7xl md:text-center lg:text-start font-bold">
         Explore my{' '}
         <span className="before:w-28 lg:before:w-48 before:right-32 lg:before:right-1 md:before:right-3 before:h-1 before:bg-orange-600 relative before:absolute before:-bottom-1">
-          works
+          work
         </span>
       </h3>
 

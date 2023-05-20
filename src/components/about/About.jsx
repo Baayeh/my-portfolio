@@ -8,7 +8,7 @@ const About = () => {
         id="about"
         className="bg-[#11001d] px-4 py-14 md:p-14 lg:px-36 md:my-8"
       >
-        <h3 className="md:text-center lg:text-start lg:mb-14 mb-4 text-5xl lg:text-7xl font-bold before:w-36 lg:before:w-52 before:h-1 before:bg-orange-600 relative before:absolute before:bottom-0">
+        <h3 className="md:text-center lg:text-start lg:mb-14 mb-4 text-5xl lg:text-7xl font-bold before:w-36 lg:before:w-52 before:h-1 before:bg-orange-600 relative before:absolute before:bottom-0 xl:mt-[5rem]">
           About me
         </h3>
         <div className="md:flex gap-8 items-center">

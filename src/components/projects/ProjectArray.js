@@ -1,4 +1,4 @@
-const projectsArr = [
+const projects = [
   {
     id: 1,
     title: 'Frugalize App',
@@ -79,4 +79,4 @@ const projectsArr = [
   },
 ];
 
-export default projectsArr;
+export default projects;

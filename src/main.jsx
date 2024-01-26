@@ -6,6 +6,14 @@ import './index.css';
 import { Home } from './pages/Home';
 import ThankYou from './pages/ThankYou';
 
+import ReactGA from 'react-ga4';
+ReactGA.initialize('G-93FF6X3JYL');
+
+ReactGA.send({
+  hitType: 'pageview',
+  page: window.location.pathname,
+});
+
 const router = createBrowserRouter([
   {
     path: '/',

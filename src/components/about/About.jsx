@@ -20,11 +20,11 @@ const About = () => {
           </div>
           <div className="about-content">
             <p className="mt-10 md:mt-8 text-lg lg:text-3xl text-slate-300">
-              Full-Stack Developer
+              Frontend Developer
             </p>
             <p className="stack text-green-500 my-1 lg:text-xl">
               <span>Javascript </span>|<span> React & Redux </span>|
-              <span> Ruby </span>|<span> Ruby on Rails </span>|
+              <span> TypeScript </span>|<span> TailwindCSS </span>|
               <span> HTML/CSS </span>
             </p>
             <p className="lg:text-lg">

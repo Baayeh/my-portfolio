@@ -32,7 +32,7 @@ const Projects = () => {
                   <img
                     src={project.image}
                     alt="Project Screenshot"
-                    className="w-full lg:w-98 lg:h-82 h-56 md:h-64"
+                    className="w-full lg:w-98 lg:h-82 h-56 md:h-64 object-cover"
                   />
                 </div>
               </div>
@@ -58,20 +58,24 @@ const Projects = () => {
                   className="
                   my-6 card-actions flex justify-center lg:justify-start gap-4"
                 >
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    className="border border-orange-500 px-3 py-2 rounded uppercase hover:bg-orange-500 ease-out duration-300"
-                  >
-                    Live Demo
-                  </a>
-                  <a
-                    href={project.source}
-                    target="_blank"
-                    className="border border-transparent bg-orange-500 px-3 py-2 rounded uppercase hover:border-orange-500 hover:bg-transparent ease-out duration-300"
-                  >
-                    Source Code
-                  </a>
+                  {project.demo && !project.demo.includes('proc360') && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      className="border border-orange-500 px-3 py-2 rounded uppercase hover:bg-orange-500 ease-out duration-300"
+                    >
+                      Live Demo
+                    </a>
+                  )}
+                  {!project.demo.includes('proc360') && (
+                    <a
+                      href={project.source}
+                      target="_blank"
+                      className="border border-transparent bg-orange-500 px-3 py-2 rounded uppercase hover:border-orange-500 hover:bg-transparent ease-out duration-300"
+                    >
+                      Source Code
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
@@ -91,7 +95,7 @@ const Projects = () => {
                   <img
                     src={project.image}
                     alt="Project Screenshot"
-                    className="w-full lg:w-98 lg:h-82 h-56 md:h-64"
+                    className="w-full lg:w-98 lg:h-82 h-56 md:h-64 object-cover"
                   />
                 </div>
               </div>
@@ -119,13 +123,15 @@ const Projects = () => {
                   className="
                   my-6 card-actions flex justify-center lg:justify-start gap-4"
                 >
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    className="border border-orange-500 px-3 py-2 rounded uppercase hover:bg-orange-500 ease-out duration-300"
-                  >
-                    Live Demo
-                  </a>
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      className="border border-orange-500 px-3 py-2 rounded uppercase hover:bg-orange-500 ease-out duration-300"
+                    >
+                      Live Demo
+                    </a>
+                  )}
                   <a
                     href={project.source}
                     target="_blank"

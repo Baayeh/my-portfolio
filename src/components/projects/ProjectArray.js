@@ -1,17 +1,39 @@
 const projects = [
   {
     id: 1,
+    title: 'Proc360',
+    image:
+      'https://res.cloudinary.com/dskl0qde4/image/upload/v1719420073/proc360_lmdwwq.png',
+    description:
+      'A full-stack app that helps a company to procure items from China',
+    languages: ['java', 'react', 'redux', 'rest-api', 'tailwindcss'],
+    demo: 'https://proc360.checkitprocure.com/',
+    source: '',
+  },
+  {
+    id: 2,
+    title: 'CruiseWare',
+    image:
+      'https://res.cloudinary.com/dskl0qde4/image/upload/v1719419691/cruiseware_ia1aeb.png',
+    description:
+      'A full-stack app that helps a company to manage its inventories seamlessly.',
+    languages: ['nodejs', 'react', 'redux', 'rest-api', 'tailwindcss'],
+    demo: '',
+    source: 'https://github.com/Baayeh/CruiseWare',
+  },
+  {
+    id: 3,
     title: 'Frugalize App',
     image:
       'https://res.cloudinary.com/dskl0qde4/image/upload/v1678818346/Screenshot_2023-03-14_at_18-19-48_FrugalizeApp_fyowul.png',
     description:
       'The Frugalize app helps you to manage your budget. The app allows users to create categories and add transactions to the categories.',
     languages: ['ruby', 'ruby-on-rails', 'postgresql', 'devise', 'bootstrap5'],
-    demo: 'https://frugalize.onrender.com/',
-    source: 'https://github.com/Baayeh/frugalize_app',
+    demo: '',
+    source: 'https://github.com/Baayeh/frugalize-frontend',
   },
   {
-    id: 2,
+    id: 4,
     title: 'COVID-19 Tracker',
     image:
       'https://res.cloudinary.com/dskl0qde4/image/upload/v1678548278/covid-tracker_pcbiye.png',
@@ -22,7 +44,7 @@ const projects = [
     source: 'https://github.com/Baayeh/covid-metrics',
   },
   {
-    id: 3,
+    id: 5,
     title: 'Rest-Countries',
     image:
       'https://res.cloudinary.com/dskl0qde4/image/upload/v1678548304/rest-img_bhskvp.jpg',
@@ -39,7 +61,7 @@ const projects = [
     source: 'https://github.com/Baayeh/rest-countries',
   },
   {
-    id: 4,
+    id: 6,
     title: 'Space Travelers',
     image:
       'https://res.cloudinary.com/dskl0qde4/image/upload/v1678547386/Screenshot_2023-03-11_at_15-08-32_Space_Traveler_krpvzb.png',
@@ -50,7 +72,7 @@ const projects = [
     source: 'https://github.com/Baayeh/space-traveler',
   },
   {
-    id: 5,
+    id: 7,
     title: 'Leaderboard',
     image:
       'https://res.cloudinary.com/dskl0qde4/image/upload/v1678548471/Screenshot_2023-03-11_at_15-27-14_Leaderboard_rkwqau.png',
@@ -67,7 +89,7 @@ const projects = [
     source: 'https://github.com/Baayeh/leaderboard',
   },
   {
-    id: 6,
+    id: 8,
     title: 'Math Magician',
     image:
       'https://res.cloudinary.com/dskl0qde4/image/upload/v1678548324/math-magician_vvrn5d.png',

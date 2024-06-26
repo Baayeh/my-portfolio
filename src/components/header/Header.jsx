@@ -17,14 +17,14 @@ const Header = () => {
   };
 
   const downloadPdf = () => {
-    const url = '/assets/Resume.pdf';
+    const url = '/assets/Kwasi_Baayeh_Resume.pdf';
     fetch(url).then((res) => {
       res.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
         let alink = document.createElement('a');
         alink.href = fileURL;
         alink.href = fileURL;
-        alink.download = 'Resume.pdf';
+        alink.download = 'Kwasi_Baayeh_Resume.pdf';
         alink.click();
       });
     });
@@ -97,7 +97,7 @@ const Header = () => {
             </li>
             <li className="nav-item uppercase">
               <a
-                href="https://drive.google.com/file/d/1zXhvdjh_b5zhTgP6aETFplSxA0jSEcx-/view?usp=sharing"
+                href="https://drive.google.com/file/d/1NSnjddt196XtV0wQd__6aTFJexGsqxRf/view?usp=sharing"
                 type="button"
                 target="_blank"
                 className="inline-block bg-green-600 text-white p-3 rounded animate__animated animate__pulse animate__infinite animate__fast md:w-[10rem] text-center"

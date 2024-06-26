@@ -41,7 +41,7 @@ const Footer = () => {
         <div className="footer-actions mt-14 flex flex-col items-center gap-2">
           <a
             type="button"
-            href="https://drive.google.com/file/d/1NSnjddt196XtV0wQd__6aTFJexGsqxRf/view?usp=sharing"
+            href="https://drive.google.com/file/d/1mwiaI0iM-0PdzhVGdM4bq4IWcH3zkpXQ/view?usp=sharing"
             target="_blank"
             className="bg-green-600 px-2 py-3 rounded animate__animated animate__pulse animate__infinite animate__fast"
           >
